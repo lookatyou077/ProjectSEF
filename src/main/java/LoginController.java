@@ -8,6 +8,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class LoginController {
 
@@ -40,9 +41,9 @@ public class LoginController {
 
         for (int i = 1; i <= 3; i++) {
             System.out.println(
-                    obj2.get("UserName"+i).toString());
+                    ReadJSONExample.obj2.get("usernameField"+i).toString());
 
-            if (username.equals(obj2.get("UserName"+i).toString()) && password.equals(obj2.get("Password"+i).toString())) {
+            if (username.equals(ReadJSONExample.obj2.get("usernameField"+i).toString()) && password.equals(ReadJSONExample.obj2.get("passwordField"+i).toString())) {
                 loginMessage.setText("Logged in as student!");
                 return;
             }
@@ -51,7 +52,7 @@ public class LoginController {
         if (username.equals("teacher") && password.equals("teacher")) {
             try {
                 Stage stage = (Stage) loginMessage.getScene().getWindow();
-                Parent viewStudentsRoot = FXMLLoader.load(getClass().getResource("../fxml/view-students.fxml"));
+                Parent viewStudentsRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../fxml/view-students.fxml")));
                 Scene scene = new Scene(viewStudentsRoot, 600, 400);
                 stage.setScene(scene);
             } catch (IOException e) {

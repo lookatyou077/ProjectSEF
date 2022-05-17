@@ -2,9 +2,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 public class Database {
     @SuppressWarnings("unchecked")
     public static String readFileAsString(String file) throws Exception {

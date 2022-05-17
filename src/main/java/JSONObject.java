@@ -4,4 +4,8 @@ public class JSONObject {
 
     public void put(String s, String dan) {
     }
+
+    public Object get(String s) {
+        return null;
+    }
 }

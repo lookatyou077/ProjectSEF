@@ -1,18 +1,9 @@
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+//package loose.oose.fis.lab.student.manager.controllers;
 
-import jdk.nashorn.api.scripting.ScriptUtils;
-import jdk.nashorn.internal.ir.debug.JSONWriter;
-import jdk.nashorn.internal.parser.Parser;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+//import static loose.oose.fis.lab.student.manager.model.Database.readFileAsString;
 
-import static readFileAsString;
-
-public class ReadJSONExample {
+public class ReadJSONExample
+{
     static String file3 = "employees.json";
     static String json2;
 
@@ -23,6 +14,11 @@ public class ReadJSONExample {
             throw new RuntimeException(e);
         }
     }
+
+    private static String readFileAsString(String file3) {
+        return file3;
+    }
+
     static JSONObject obj2 = new JSONObject(json2);
     // public static String readFileAsString(String file)throws Exception
     //  {
@@ -36,5 +32,6 @@ public class ReadJSONExample {
 
         //JSONArray arr = obj2.getJSONArray("Student");
 
-
     }
+
+}
