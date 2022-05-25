@@ -1,0 +1,7 @@
+application\LoginController.class
+application\RegisterController.class
+application\Subject.class
+application\ReadJSONExample.class
+application\Database.class
+application\Main.class
+application\TeacherController.class
