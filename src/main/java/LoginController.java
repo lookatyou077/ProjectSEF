@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static application.ReadJSONExample.obj2;
+
 public class LoginController {
 
     @FXML

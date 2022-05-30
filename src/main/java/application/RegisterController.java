@@ -23,7 +23,7 @@ public class RegisterController {
 
    // @FXML
     //public Text loginMessage;
-    static int index=1;
+    public static int index;
     private Stage stage;
     private Scene scene;
     private Parent root;

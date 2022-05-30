@@ -10,8 +10,7 @@ import org.json.JSONObject;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static readFileAsString;
-
+import static application.Database.readFileAsString;
 public class ReadJSONExample {
     static String file3 = "employees.json";
     static String json2;
@@ -23,7 +22,9 @@ public class ReadJSONExample {
             throw new RuntimeException(e);
         }
     }
+
     static JSONObject obj2 = new JSONObject(json2);
+
     // public static String readFileAsString(String file)throws Exception
     //  {
     //     return new String(Files.readAllBytes(Paths.get(file)));
@@ -38,3 +39,4 @@ public class ReadJSONExample {
 
 
     }
+}

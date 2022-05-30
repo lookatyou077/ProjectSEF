@@ -5,6 +5,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import static application.Database.readFileAsString;
 
 public class ReadJSONExample
@@ -19,20 +22,17 @@ public class ReadJSONExample
             throw new RuntimeException(e);
         }
     }
-    static JSONObject obj2 = new JSONObject(json2);
-   // public static String readFileAsString(String file)throws Exception
-  //  {
-   //     return new String(Files.readAllBytes(Paths.get(file)));
-   // }
+    public static JSONObject obj2 = new JSONObject(json2);
+    public static String readFileAsString(String file)throws Exception
+    {
+        return new String(Files.readAllBytes(Paths.get(file)));
+    }
 
-//    public static void main(String[] args) throws Exception {
-//        String file3 = "UserData.json";
-//        String json2 = readFileAsString(file3);
-//        JSONObject obj2 = new JSONObject(json2);
-//
-//        //JSONArray arr = obj2.getJSONArray("Student");
-//
-//
-//    }
+    public static void main(String[] args) throws Exception {
+        String file3 = "UserData.json";
+        String json2 = readFileAsString(file3);
+        JSONObject obj2 = new JSONObject(json2);
+
+    }
 
 }
