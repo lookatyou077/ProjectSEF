@@ -9,6 +9,7 @@
         <module name="MainProject" />
         <module name="Project-SEF" />
         <module name="MainSEF" />
+        <module name="ProjectSEF-main" />
       </profile>
     </annotationProcessing>
   </component>
